@@ -1,10 +1,22 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'empty-nx-workspace-root',
+  selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'empty-nx-workspace';
+export class AppComponent implements OnInit{
+  title = 'my-app';
+
+  public yaml = '';
+
+  ngOnInit(): void {
+    this.yaml = require('./test.yaml')
+    console.log('this.yaml', this.yaml)
+  }
+
+
+
+
+
 }

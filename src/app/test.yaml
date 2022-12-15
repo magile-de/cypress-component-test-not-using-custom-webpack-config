@@ -1,0 +1,7 @@
+
+---  # yaml document beginning
+# comment syntax
+
+# basic syntax - key and value separated by colon and space before the value
+key: value
+
